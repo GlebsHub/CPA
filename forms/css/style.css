@@ -1,0 +1,132 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+.open-popup{ 
+    display: inline-block ;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    background: blue;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+
+.popup__bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;/* попап не видим*/
+    pointer-events: none; /*убрать активность попапа*/
+    transition: 0.5s all ;   
+}
+
+.popup__bg.active{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all ;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 400px;
+    padding: 25px;;
+    transition: 0.5s all;
+}
+
+.popup.active{
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.close-popup{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.popup label{
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup .label__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0cfd3;
+    margin-bottom: 5px;
+}
+
+.popup input{
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0cfd3;
+}
+
+.popup input:focus{
+    border-bottom: 1px solid blue;
+}
+
+.popup input:focus + .label__text{
+    color: blue;
+}
+
+.popup textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;  
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0cfd3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup textarea:focus{
+    border-bottom: 1px solid blue;
+}
+
+.popup textarea:focus + .label__text{
+    color: blue;
+}
+
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid blue;
+    background: blue;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+.popup button:hover {
+    background-color: #fff;
+    color: blue;
+    transition: 0.5s all;
+}

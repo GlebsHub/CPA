@@ -1,0 +1,27 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+    max-width: 1000;
+}
+
+td, th{
+    border: 1px solid black;
+    padding:  3px;
+    text-align: center; 
+    vertical-align: middle;
+}   
+
+.bg-gray{
+    background-color: #c1c1c1;
+}
+

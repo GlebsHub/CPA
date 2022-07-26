@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+                            
+       <a href="#" class="open-popup">personal info</a>
+       <a href="#" class="open-popup" >transport type</a>
+       <a href="#" class="open-popup" >life experiense</a>
+       <a href="#" class="open-popup">your wishes</a>
+       <a href="#" class="open-popup">peach section</a>
+       <a href="#" class="open-popup">describe your ideas here</a>
+       <a href="#" class="open-popup">soup</a>
+       <a href="#" class="open-popup">gender</a>
+       <a href="#" class="open-popup">living place</a>
+       <a href="#" class="open-popup">pets</a>
+        
+    </div>
+   
+    
+    <div class="popup__bg">
+        <form class="popup" id="popup1">
+            <a href=""class="close-popup">X</a>
+            <label>
+                <input type="text" name="username">
+                <div class="label_text">
+                    name
+                </div>
+            </label>
+ 
+            <label>
+                <input type="password" name="userpassword" pattern="[a-z0-5{8,}" value="">
+                <div class="label_text">
+                    password
+                </div>
+            </label>
+
+            <label>
+                <input type="tel" name="telephone"  value="">
+                <div class="label_text">
+                    telephone
+                </div>
+            </label>
+
+            <button type="submit">send</button>
+        </form>
+
+        <form class="popup2" id="popup2">
+            <a href=""class="close-popup">X</a>
+            <p>transport type</p>
+            <label>
+                <input type="radio" checked name="train"  value="">
+                <div class="label_text">
+                    train
+                </div>
+            </label>
+ 
+            <label>
+                <input type="radio" name="car"  value="">
+                <div class="label_text">
+                    car
+                </div>
+            </label>
+
+            <label>
+                <input type="radio" name="plane"  value="">
+                <div class="label_text">
+                    plane
+                </div>
+            </label>
+
+            <button type="submit">send</button>
+
+        </form>
+
+
+        <form class="popup" id="popup3">
+            <a href=""class="close-popup">X</a>
+            <p>life experiense</p>
+            <label>
+                <input type="number" name="age" min="13" max="99"  value="">
+                <div class="label_text">
+                    age
+                </div>
+            </label>
+ 
+            <label>
+                <input type="name" name="сountriesvisited"  value="">
+                <div class="label_text">
+                    countries visited
+                </div>
+            </label>
+
+            <label>
+                <input type="number" name="sitiesVisited"  value="">
+                <div class="label_text">
+                    cities visited
+                </div>
+            </label>
+
+            <button type="submit">send</button>
+
+        </form>
+
+
+        <form class="popup" id="popup4">
+            <a href=""class="close-popup">X</a>
+            <p>your wishes</p>
+            <label>
+                <input type="checkbox" name="head"  value="">
+                <div class="label_text">
+                    low price
+                </div>
+            </label>
+ 
+            <label>
+                <input type="checkbox" name="mainPart"  value="">
+                <div class="label_text">
+                    comfort conditions
+                </div>
+            </label>
+
+            <label>
+                <input type="checkbox" name="conslusion"  value="" >
+                <div class="label_text">
+                    interesting places
+                </div>
+            </label>
+
+            <button type="submit">send</button>
+
+        </form>
+
+        <form class="popup" id="popup5">
+            <a href=""class="close-popup">X</a>
+            <p>peach section</p>
+            <label>
+                <input type="file" name="photo"  value="">
+                <div class="label_text">
+                    photo
+                </div>
+            </label>
+ 
+            <label>
+                <input type="file" name="questionnaire"  value="">
+                <div class="label_text">
+                    questionnaire
+                </div>
+            </label>
+
+            <label>
+                <input type="file" name="presentation"  value="">
+                <div class="label_text">
+                    presentation
+                </div>
+            </label>
+
+            <button type="submit">send</button>
+
+        </form>
+
+
+        <form class="popup" id="popup6">
+            <a href=""class="close-popup">X</a>
+            <p>You can describe your ideas here</p>
+            <label>
+                <textarea name="text"></textarea>
+                <div class="label_text">
+                    here
+                </div>
+            </label>
+
+            <button type="submit">send</button>
+
+        </form>
+
+        <form class="popup" id="popup7">
+            <a href=""class="close-popup">X</a>
+            <p>soup</p>
+            <label>
+                <select name="soup">
+                    <option value="borsh">borsh</option>
+                    <option  selected value="shi">shi</option>
+                    <option value="ramen">ramen</option>
+                </select>
+            </label>
+
+            <button type="submit">send</button>
+
+        </form>
+
+        <form class="popup" id="popup8">
+            <a href=""class="close-popup">X</a>
+            <p>gender</p>
+            <label>
+                <input checked type="radio" name="achiements"  value="">
+                <div>
+                    <p>man</p>
+                </div>
+
+            </label>
+
+            <label>
+                <input type="radio" name="achiements"  value="">
+                <div>
+                    <p>woman</p>
+                </div>
+            </label>
+
+            <button type="submit">send</button>
+
+        </form>
+
+        <form class="popup" id="popup9">
+            <a href=""class="close-popup">X</a>
+            <p>living place</p>
+            <label>
+                <input type="text" name="city" placeholder="city" value="">
+                <div>
+                    <p>city</p>
+                </div>
+
+            </label>
+
+            <label>
+                <input type="text" name="conuntryside" placeholder="countryside" value="">
+                <div>
+                    <p>conuntryside</p>
+                </div>
+            </label>
+
+            <button type="submit">send</button>
+
+        </form>
+
+        <form class="popup" id="popup10">
+            <a href=""class="close-popup">X</a>
+            <p>pets</p>
+            <label>
+                <input type="checkbox" name="dogs"  placeholder="dogs" value=""> 
+                <div>
+                    <p>dogs</p>
+                </div>
+
+            </label>
+            <label>
+                <input type="checkbox" name="cats" placeholder="cats"  value=""> 
+                <div>
+                    <p>cats</p>
+                </div>
+
+            </label>
+            <label>
+                <input type="checkbox" name="rats" placeholder="rats" value="">  
+                <div>
+                    <p>rats</p>
+                </div>
+
+            </label>
+            <label>
+                <input type="checkbox" name="others" placeholder="others" value=""> 
+                <div>
+                    <p>others</p>
+                </div>
+
+            </label>
+
+           
+
+            <button type="submit">send</button>
+
+        </form>
+
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
